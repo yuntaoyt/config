@@ -7,8 +7,8 @@ spring:
 #mybatis的相关配置
 mybatis:
   #mapper配置文件
-  mapper-locations: classpath*:com/yt/springbootmybatis/mapper/*.xml
-  type-aliases-package: com.yt.springbootmybatis.entity
+  mapper-locations: classpath*:com/yt/springbootspringcloudconfigclient/mapper/*.xml
+  type-aliases-package: com.yt.springbootspringcloudconfigclient.entity
   #开启驼峰命名
   configuration:
     map-underscore-to-camel-case: true
