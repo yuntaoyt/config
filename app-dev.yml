@@ -1,3 +1,17 @@
-my:  
-  id: 123
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/user?serverTimezone=UTC    #数据库地址
+    driver-class-name: com.mysql.jdbc.Driver #数据库驱动
+    password: root                           #用户密码
+    username: root                           #用户名称
+#mybatis的相关配置
+mybatis:
+  #mapper配置文件
+  mapper-locations: classpath*:com/yt/springbootmybatis/mapper/*.xml
+  type-aliases-package: com.yt.springbootmybatis.entity
+  #开启驼峰命名
+  configuration:
+    map-underscore-to-camel-case: true
+my: 
+  id: 3333
   name: yuntao
